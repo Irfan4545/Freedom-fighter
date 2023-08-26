@@ -1,0 +1,283 @@
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   
+ body{
+   background-color: skyblue;
+ }
+
+   /* Style for the navigation bar start */
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+  
+      /* Style for the navigation bar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+  
+      /* Hover effect for navigation bar links */
+      .navbar a:hover {
+        background-color: #555;
+      }
+
+      /* This is a freedom fighter button*/
+      .search-nav{
+        float: right;
+      }
+     
+
+
+           /*------------------------ dropdown start -------------------------*/
+        
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+/*----------------------marque start---------------------------*/
+
+.marquee{
+   /* border:1px solid red; */
+   width: 1900px;
+   height:500px;
+   margin: 10px;
+}
+
+
+
+
+    /* content start */
+
+
+    h1{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+.content{
+   text-align: center;
+   margin-top: 15px;
+
+}
+
+.content img{
+   width: 1200px;
+   height: 500px;
+   
+}
+
+.text{
+   width: 1200px;
+   height: 100px;
+   margin-left: 0px;
+   font-weight: bold;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   overflow: auto;
+   text-overflow: clip;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+hr{
+  color: black;
+}
+
+
+.active{
+  background-color: green;
+}
+/*------------------------------ contact page css ------------------------*/
+
+
+
+    /* footer start */
+    .footer{
+      /* position: fixed; */
+      
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: goldenrod;
+      color: #fff;
+      padding: 20px;
+      /* background-color: rebeccapurple; */
+   }
+   
+
+
+   /*------------------ sardar.html css start------------------- */
+
+   .sardar_content{
+    /* border: 2px solid black; */
+    width: 1300px;
+    height: 1500px;
+    margin-top: 30px;
+   }
+
+/*------------------ about.html css start------------------- */
+  .aboutim{
+    width: 570px;
+    height: 500px;
+  }
+
+   
+  /* ------------------------meadia query--------------------------------------*/
+         /*---------------- Mobile view ------------------*/
+
+/*           
+           @media(min-width: 320px) and (max-width: 600px) {
+           .content img{
+              width: 320px;
+              height: 200px;
+              
+              
+           }
+            }
+            
+           @media (max-width: 2000px) and (min-width: 1000px){
+            .content img{
+               width: 300px;
+               height: 300px;
+            }
+             } */
+
+
+
+
+
+             
+
+/* Media query for mobile views */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgray; /* Change the background color for mobile */
+  }
+
+  /* Adjust navigation bar and links for mobile */
+  .navbar {
+    overflow: visible;
+    text-align: center;
+  }
+
+  .navbar a {
+    float: none;
+    display: block;
+    padding: 10px;
+  }
+
+  
+
+
+
+  /* Adjust the size of images for mobile */
+  .content img {
+    width: 100%; /* Make images occupy the full width of the screen */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .text {
+    width: 90%; /* Adjust text width for better readability */
+    margin: 0 auto;
+  }
+
+  /* Adjust footer position for mobile */
+  .footer {
+    position: static;
+  }
+}
+
+/* Media query for laptop views */
+@media only screen and (min-width: 601px) {
+  body {
+    background-color: skyblue; /* Reset background color for laptops */
+  }
+
+  /* Reset the changes made for mobile in the previous media query */
+  .navbar {
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    padding: 20px;
+  }
+
+
+  .content img {
+    width: 1200px;
+    height: 500px;
+  }
+
+  .text {
+    width: 1200px;
+    margin: 0;
+  }
+
+  /* Reset footer position for laptops */
+  .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+  }
+}
+
+/* ... your existing CSS code ... */
